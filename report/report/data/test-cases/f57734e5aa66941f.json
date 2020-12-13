@@ -1,0 +1,96 @@
+{
+  "uid" : "f57734e5aa66941f",
+  "name" : "登录接口用例",
+  "fullName" : "test_Login#test_Login",
+  "historyId" : "f84ab43ee8625be09cb3b9526a370310",
+  "time" : {
+    "start" : 1605193731744,
+    "stop" : 1605193731851,
+    "duration" : 107
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "delete_all_lesson",
+    "time" : {
+      "start" : 1605193729992,
+      "stop" : 1605193731400,
+      "duration" : 1408
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "delete_all_lesson::fin",
+    "time" : {
+      "start" : 1605193732060,
+      "stop" : 1605193732060,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "登录模块"
+  }, {
+    "name" : "story",
+    "value" : "登录接口"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "tag",
+    "value" : "login(order=1)"
+  }, {
+    "name" : "suite",
+    "value" : "test_Login"
+  }, {
+    "name" : "host",
+    "value" : "2Q7E3JCM2F8I91T"
+  }, {
+    "name" : "thread",
+    "value" : "11860-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_Login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "inData",
+    "value" : "'{\"username\": \"\",\"password\": \"sdfsdfsdf\"}'"
+  }, {
+    "name" : "repsData",
+    "value" : "'{\n\"retcode\": 1,\n\"reason\": \"用户或者密码错误\"\n}'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "login(order=1)" ]
+  },
+  "source" : "f57734e5aa66941f.json",
+  "parameterValues" : [ "'{\"username\": \"\",\"password\": \"sdfsdfsdf\"}'", "'{\n\"retcode\": 1,\n\"reason\": \"用户或者密码错误\"\n}'" ]
+}

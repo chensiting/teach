@@ -1,0 +1,194 @@
+{
+  "uid" : "5405a7d1f342727c",
+  "name" : "删除课程用例",
+  "fullName" : "test_Lesson.TestLesson#test_delete_lesson[{\"action\":\"delete_course\",\"id\":\"#\"}-{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\lib\\common.py\", line 69, in dispatch\n    return handler(request, *args, **kwargs)\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\apps\\mgr\\handlers\\mgr.py\", line 256, in handle_delete_course\n    Course.objects.filter(id=request.param_dict",
+  "historyId" : "5a8545fa4ef9f201e7cbc15a65454f78",
+  "time" : {
+    "start" : 1605360725466,
+    "stop" : 1605360725466,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "ValueError: invalid literal for int() with base 10: '{\"action\":\"delete_course\",\"id\":\"#\"}'",
+  "statusTrace" : "self = <testCaseTeach.test_Lesson.TestLesson object at 0x0438A5D0>, inData = '{\"action\":\"delete_course\",\"id\":\"#\"}'\nrepsData = '{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\\n  File \"G:\\\\SQ资料区\\\\松勤自动化课程\\\\Web-API课程\\\\安装文件\\\\restapi-...py\", line 947, in get_prep_value\\n    return int(value)\\nValueError: invalid literal for int() with base 10: \\'#\\'\\n\"}'\n\n    @allure.story(\"删除课程\")\n    @allure.title(\"删除课程用例\")\n    @pytest.mark.lesson_delete\n    @pytest.mark.parametrize('inData,repsData', get_excelData('2-课程模块', 39, 46, 6, 8))\n    def test_delete_lesson(self,inData,repsData):\n>       res = LessonClass().deletecourse(self.session,inData)\n\ntest_Lesson.py:54: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <Lib.ApiLesson.LessonClass object at 0x04347AB0>, session = 'qtq0dk3rbofclzb12x8g14qwztcah1ec'\ninId = '{\"action\":\"delete_course\",\"id\":\"#\"}'\n\n    def deletecourse(self,session,inId):\n        user_cookie = {'sessionid': session}\n        api_url = f'{HOST}/api/mgr/sq_mgr/'\n        header = {'Content-Type': 'application/x-www-form-urlencoded'}\n        payload = {\n                   'action':'delete_course',\n>                  'id':int(inId)}  #强转为数值型   int可以转字符串和数字，如果是字母转换不了\nE       ValueError: invalid literal for int() with base 10: '{\"action\":\"delete_course\",\"id\":\"#\"}'\n\n..\\Lib\\ApiLesson.py:44: ValueError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "delete_all_lesson",
+    "time" : {
+      "start" : 1605360722243,
+      "stop" : 1605360723450,
+      "duration" : 1207
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1605360723450,
+      "stop" : 1605360723751,
+      "duration" : 301
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "delete_all_lesson::fin",
+    "time" : {
+      "start" : 1605360725530,
+      "stop" : 1605360725530,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1605360725528,
+      "stop" : 1605360725528,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "课程模块"
+  }, {
+    "name" : "story",
+    "value" : "删除课程"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "lesson_delete"
+  }, {
+    "name" : "tag",
+    "value" : "Lesson(order=2)"
+  }, {
+    "name" : "suite",
+    "value" : "test_Lesson"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLesson"
+  }, {
+    "name" : "host",
+    "value" : "2Q7E3JCM2F8I91T"
+  }, {
+    "name" : "thread",
+    "value" : "5724-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_Lesson"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "inData",
+    "value" : "'{\"action\":\"delete_course\",\"id\":\"#\"}'"
+  }, {
+    "name" : "repsData",
+    "value" : "'{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\lib\\common.py\", line 69, in dispatch\n    return handler(request, *args, **kwargs)\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\apps\\mgr\\handlers\\mgr.py\", line 256, in handle_delete_course\n    Course.objects.filter(id=request.param_dict['id']).delete()\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\manager.py\", line 82, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\query.py\", line 836, in filter\n    return self._filter_or_exclude(False, *args, **kwargs)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\query.py\", line 854, in _filter_or_exclude\n    clone.query.add_q(Q(*args, **kwargs))\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1253, in add_q\n    clause, _ = self._add_q(q_object, self.used_aliases)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1277, in _add_q\n    split_subq=split_subq,\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1215, in build_filter\n    condition = self.build_lookup(lookups, col, value)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1085, in build_lookup\n    lookup = lookup_class(lhs, rhs)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\lookups.py\", line 18, in __init__\n    self.rhs = self.get_prep_lookup()\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\lookups.py\", line 68, in get_prep_lookup\n    return self.lhs.output_field.get_prep_value(self.rhs)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\fields\\__init__.py\", line 947, in get_prep_value\n    return int(value)\nValueError: invalid literal for int() with base 10: '#'\n\"}'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "80deb04b81d2e8ab",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /api/mgr/loginReq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03A8A890>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))",
+      "time" : {
+        "start" : 1605360697977,
+        "stop" : 1605360697977,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "81d2c3fd4efe0452",
+      "status" : "broken",
+      "statusDetails" : "ValueError: invalid literal for int() with base 10: '{\"action\":\"delete_course\",\"id\":\"#\"}'",
+      "time" : {
+        "start" : 1605193729918,
+        "stop" : 1605193729918,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "e18fd3a63ef9c148",
+      "status" : "broken",
+      "statusDetails" : "ValueError: invalid literal for int() with base 10: '{\"action\":\"delete_course\",\"id\":\"#\"}'",
+      "time" : {
+        "start" : 1605192774934,
+        "stop" : 1605192774934,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "efd917260f9dad0c",
+      "status" : "broken",
+      "statusDetails" : "ValueError: invalid literal for int() with base 10: '{\"action\":\"delete_course\",\"id\":\"#\"}'",
+      "time" : {
+        "start" : 1605192050078,
+        "stop" : 1605192050078,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "4caab4609db52bc1",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /api/mgr/loginReq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x043308B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))",
+      "time" : {
+        "start" : 1605192029688,
+        "stop" : 1605192029688,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "36fe7c77278fd32f",
+      "status" : "broken",
+      "statusDetails" : "ValueError: invalid literal for int() with base 10: '{\"action\":\"delete_course\",\"id\":\"#\"}'",
+      "time" : {
+        "start" : 1605191856446,
+        "stop" : 1605191856447,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "lesson_delete", "Lesson(order=2)" ]
+  },
+  "source" : "5405a7d1f342727c.json",
+  "parameterValues" : [ "'{\"action\":\"delete_course\",\"id\":\"#\"}'", "'{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\lib\\common.py\", line 69, in dispatch\n    return handler(request, *args, **kwargs)\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\apps\\mgr\\handlers\\mgr.py\", line 256, in handle_delete_course\n    Course.objects.filter(id=request.param_dict['id']).delete()\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\manager.py\", line 82, in manager_method\n    return getattr(self.get_queryset(), name)(*args, **kwargs)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\query.py\", line 836, in filter\n    return self._filter_or_exclude(False, *args, **kwargs)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\query.py\", line 854, in _filter_or_exclude\n    clone.query.add_q(Q(*args, **kwargs))\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1253, in add_q\n    clause, _ = self._add_q(q_object, self.used_aliases)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1277, in _add_q\n    split_subq=split_subq,\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1215, in build_filter\n    condition = self.build_lookup(lookups, col, value)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\sql\\query.py\", line 1085, in build_lookup\n    lookup = lookup_class(lhs, rhs)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\lookups.py\", line 18, in __init__\n    self.rhs = self.get_prep_lookup()\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\lookups.py\", line 68, in get_prep_lookup\n    return self.lhs.output_field.get_prep_value(self.rhs)\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\db\\models\\fields\\__init__.py\", line 947, in get_prep_value\n    return int(value)\nValueError: invalid literal for int() with base 10: '#'\n\"}'" ]
+}

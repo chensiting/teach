@@ -1,0 +1,531 @@
+[ {
+  "uid" : "60b4149e0c3b7d19",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360724106,
+    "stop" : 1605360724190,
+    "duration" : 84
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c23bfe18118329fd",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360724793,
+    "stop" : 1605360724801,
+    "duration" : 8
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e02eec5c970a7b6",
+  "name" : "删除课程用例",
+  "time" : {
+    "start" : 1605360725455,
+    "stop" : 1605360725455,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "3d6bc0a0cfd4b1d",
+  "name" : "列出课程用例",
+  "time" : {
+    "start" : 1605360725211,
+    "stop" : 1605360725215,
+    "duration" : 4
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "5cfe2c75675513c3",
+  "name" : "删除课程用例",
+  "time" : {
+    "start" : 1605360725520,
+    "stop" : 1605360725520,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4c90d31f91cb2cc",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360724297,
+    "stop" : 1605360724398,
+    "duration" : 101
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3182548f40fd0bd3",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360723751,
+    "stop" : 1605360723841,
+    "duration" : 90
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2daeac324af3317d",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360724773,
+    "stop" : 1605360724784,
+    "duration" : 11
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "60e81bc3e322983c",
+  "name" : "修改课程用例",
+  "time" : {
+    "start" : 1605360725371,
+    "stop" : 1605360725416,
+    "duration" : 45
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "46f9a4c1c5a5c051",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360723864,
+    "stop" : 1605360723880,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a2dc729788ed00c",
+  "name" : "修改课程用例",
+  "time" : {
+    "start" : 1605360725223,
+    "stop" : 1605360725277,
+    "duration" : 54
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "781fcfe9a8e29c54",
+  "name" : "登录接口用例",
+  "time" : {
+    "start" : 1605360727501,
+    "stop" : 1605360727594,
+    "duration" : 93
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "ea58022bb2a7fb4",
+  "name" : "获取图片用例",
+  "time" : {
+    "start" : 1605360727598,
+    "stop" : 1605360727614,
+    "duration" : 16
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "6f0b6ab0b837df8b",
+  "name" : "列出课程用例",
+  "time" : {
+    "start" : 1605360725060,
+    "stop" : 1605360725064,
+    "duration" : 4
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "1cc8b7ad37b044cc",
+  "name" : "列出课程用例",
+  "time" : {
+    "start" : 1605360724983,
+    "stop" : 1605360724987,
+    "duration" : 4
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "dc54e45cf29a8677",
+  "name" : "修改课程用例",
+  "time" : {
+    "start" : 1605360725299,
+    "stop" : 1605360725341,
+    "duration" : 42
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "6cf38d3c76358d76",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360724402,
+    "stop" : 1605360724408,
+    "duration" : 6
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "27f27bcc0d45a5ad",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360724736,
+    "stop" : 1605360724757,
+    "duration" : 21
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "ca6536e586417a6d",
+  "name" : "登录接口用例",
+  "time" : {
+    "start" : 1605360727291,
+    "stop" : 1605360727400,
+    "duration" : 109
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "c36da6f299eae6d5",
+  "name" : "列出课程用例",
+  "time" : {
+    "start" : 1605360725192,
+    "stop" : 1605360725198,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "34e8e3d3bb2d8119",
+  "name" : "列出课程用例",
+  "time" : {
+    "start" : 1605360725085,
+    "stop" : 1605360725090,
+    "duration" : 5
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "4318d76d837416d3",
+  "name" : "登录接口用例",
+  "time" : {
+    "start" : 1605360727404,
+    "stop" : 1605360727497,
+    "duration" : 93
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "5405a7d1f342727c",
+  "name" : "删除课程用例",
+  "time" : {
+    "start" : 1605360725466,
+    "stop" : 1605360725466,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "90895a9217ed812a",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360724060,
+    "stop" : 1605360724075,
+    "duration" : 15
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "8965bfceeecacab2",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360724926,
+    "stop" : 1605360724932,
+    "duration" : 6
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "fca4cd999318ea04",
+  "name" : "列出课程用例",
+  "time" : {
+    "start" : 1605360725147,
+    "stop" : 1605360725151,
+    "duration" : 4
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "d7d252478bdef145",
+  "name" : "列出课程用例",
+  "time" : {
+    "start" : 1605360725119,
+    "stop" : 1605360725125,
+    "duration" : 6
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "dc21e90613ac9b59",
+  "name" : "删除课程用例",
+  "time" : {
+    "start" : 1605360725437,
+    "stop" : 1605360725437,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "2a96cb6f7641f660",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360724422,
+    "stop" : 1605360724517,
+    "duration" : 95
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ee9727ec13cd6d2",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360724531,
+    "stop" : 1605360724721,
+    "duration" : 190
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "17fbae0f684310c4",
+  "name" : "列出课程用例",
+  "time" : {
+    "start" : 1605360725201,
+    "stop" : 1605360725206,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ef3f3966ec3e75f3",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360724911,
+    "stop" : 1605360724916,
+    "duration" : 5
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "767e07e9691a7009",
+  "name" : "删除课程用例",
+  "time" : {
+    "start" : 1605360725510,
+    "stop" : 1605360725510,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "6d20115ca592ba98",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360724959,
+    "stop" : 1605360724965,
+    "duration" : 6
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "210a4a592d461415",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360724882,
+    "stop" : 1605360724889,
+    "duration" : 7
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2407d9066181aa3",
+  "name" : "登录接口用例",
+  "time" : {
+    "start" : 1605360726924,
+    "stop" : 1605360727285,
+    "duration" : 361
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "95bb7a1082dda7f5",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360724810,
+    "stop" : 1605360724816,
+    "duration" : 6
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d793ec9cdb7f452f",
+  "name" : "列出课程用例",
+  "time" : {
+    "start" : 1605360724974,
+    "stop" : 1605360724979,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c940c4e961ddc9fc",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360724824,
+    "stop" : 1605360724831,
+    "duration" : 7
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "744268b81d5d8f41",
+  "name" : "删除课程用例",
+  "time" : {
+    "start" : 1605360725498,
+    "stop" : 1605360725498,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "d7892522cfffbeb7",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360724898,
+    "stop" : 1605360724902,
+    "duration" : 4
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4f5d8dd56dc2b86",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360723887,
+    "stop" : 1605360723893,
+    "duration" : 6
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "bfaa975db29cc3bb",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360723944,
+    "stop" : 1605360723951,
+    "duration" : 7
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "cfd00a63256d5d33",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360724942,
+    "stop" : 1605360724950,
+    "duration" : 8
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "efb56cb5fa21a1ee",
+  "name" : "删除课程用例",
+  "time" : {
+    "start" : 1605360725487,
+    "stop" : 1605360725487,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "12158fb5c6c4d540",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360724843,
+    "stop" : 1605360724853,
+    "duration" : 10
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f9d68dd7bfdf99c",
+  "name" : "列出课程用例",
+  "time" : {
+    "start" : 1605360725009,
+    "stop" : 1605360725013,
+    "duration" : 4
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "fdb3bdb143ff34",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360723967,
+    "stop" : 1605360724050,
+    "duration" : 83
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4f1ec136ef862feb",
+  "name" : "删除课程用例",
+  "time" : {
+    "start" : 1605360725476,
+    "stop" : 1605360725477,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "f9ea22e637cad71c",
+  "name" : "列出课程用例",
+  "time" : {
+    "start" : 1605360725034,
+    "stop" : 1605360725038,
+    "duration" : 4
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "cdeb25e0845ea20e",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360724864,
+    "stop" : 1605360724870,
+    "duration" : 6
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "bbb33d0f300f05e7",
+  "name" : "列出课程用例",
+  "time" : {
+    "start" : 1605360725182,
+    "stop" : 1605360725188,
+    "duration" : 6
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c14dcd5948762933",
+  "name" : "新增课程用例",
+  "time" : {
+    "start" : 1605360724201,
+    "stop" : 1605360724290,
+    "duration" : 89
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

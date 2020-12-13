@@ -1,0 +1,114 @@
+{
+  "uid" : "88f7bf3a1c64750f",
+  "name" : "test_add_lesson[{\"name\":\"大学英语大学英语大学英语大学英语大学英语\",\"desc\":\"大学英语课程\",\"display_idx\":\"4\"}-{\"retcode\": 0, \"id\": 1289}]",
+  "fullName" : "test_Lesson.TestLesson#test_add_lesson",
+  "historyId" : "e86400e3f6a97c6ed76ea1ac2811da38",
+  "time" : {
+    "start" : 1605153132191,
+    "stop" : 1605153132212,
+    "duration" : 21
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "delete_all_lesson",
+    "time" : {
+      "start" : 1605153131400,
+      "stop" : 1605153131861,
+      "duration" : 461
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1605153131861,
+      "stop" : 1605153131987,
+      "duration" : 126
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1605153133253,
+      "stop" : 1605153133253,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "课程模块"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "lesson_add"
+  }, {
+    "name" : "tag",
+    "value" : "Lesson(order=2)"
+  }, {
+    "name" : "suite",
+    "value" : "test_Lesson"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLesson"
+  }, {
+    "name" : "host",
+    "value" : "BLD-04728"
+  }, {
+    "name" : "thread",
+    "value" : "40124-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_Lesson"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "inData",
+    "value" : "'{\"name\":\"大学英语大学英语大学英语大学英语大学英语\",\"desc\":\"大学英语课程\",\"display_idx\":\"4\"}'"
+  }, {
+    "name" : "repsData",
+    "value" : "'{\"retcode\": 0, \"id\": 1289}'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "lesson_add", "Lesson(order=2)" ]
+  },
+  "source" : "88f7bf3a1c64750f.json",
+  "parameterValues" : [ "'{\"name\":\"大学英语大学英语大学英语大学英语大学英语\",\"desc\":\"大学英语课程\",\"display_idx\":\"4\"}'", "'{\"retcode\": 0, \"id\": 1289}'" ]
+}

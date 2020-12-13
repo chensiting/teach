@@ -1,0 +1,178 @@
+{
+  "uid" : "b202cac8cdc39900",
+  "name" : "列出课程用例",
+  "fullName" : "test_Lesson.TestLesson#test_list_lesson",
+  "historyId" : "a1f83fd715a064dc78647590b35ddad1",
+  "time" : {
+    "start" : 1605193729514,
+    "stop" : 1605193729519,
+    "duration" : 5
+  },
+  "description" : "列出课程",
+  "descriptionHtml" : "<p>列出课程</p>\n",
+  "status" : "broken",
+  "statusMessage" : "json.decoder.JSONDecodeError: Invalid control character at: line 1 column 63 (char 62)",
+  "statusTrace" : "self = <testCaseTeach.test_Lesson.TestLesson object at 0x041CEAF0>\ninData = '{\"action\":\"list_course\",\"pagenum\":\"-1\",\"pagesize\":\"20\"}'\nrepsData = '{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\\n  File \"G:\\\\SQ资料区\\\\松勤自动化课程\\\\Web-API课程\\\\安装文件\\\\restapi-...alized set the \\'\\nTypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.\\n\"}'\n\n    @allure.story(\"列出课程\")\n    @allure.title(\"列出课程用例\")\n    @pytest.mark.lesson_list\n    @pytest.mark.parametrize('inData,repsData', get_excelData('2-课程模块', 27, 38, 6, 8))\n    def test_list_lesson(self,inData,repsData):\n        \"\"\"列出课程\"\"\"\n        res = LessonClass().listcourse(self.session,json.loads(inData))\n>       assert  json.loads(res)['retcode'] == json.loads(repsData)['retcode']#断言\n\ntest_Lesson.py:37: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ng:\\program files (x86)\\python36-32\\lib\\json\\__init__.py:354: in loads\n    return _default_decoder.decode(s)\ng:\\program files (x86)\\python36-32\\lib\\json\\decoder.py:339: in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <json.decoder.JSONDecoder object at 0x03A44210>\ns = '{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\\n  File \"G:\\\\SQ资料区\\\\松勤自动化课程\\\\Web-API课程\\\\安装文件\\\\restapi-...alized set the \\'\\nTypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.\\n\"}'\nidx = 0\n\n    def raw_decode(self, s, idx=0):\n        \"\"\"Decode a JSON document from ``s`` (a ``str`` beginning with\n        a JSON document) and return a 2-tuple of the Python\n        representation and the index in ``s`` where the document ended.\n    \n        This can be used to decode a JSON document from a string that may\n        have extraneous data at the end.\n    \n        \"\"\"\n        try:\n>           obj, end = self.scan_once(s, idx)\nE           json.decoder.JSONDecodeError: Invalid control character at: line 1 column 63 (char 62)\n\ng:\\program files (x86)\\python36-32\\lib\\json\\decoder.py:355: JSONDecodeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "delete_all_lesson",
+    "time" : {
+      "start" : 1605193727525,
+      "stop" : 1605193728148,
+      "duration" : 623
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1605193728148,
+      "stop" : 1605193728486,
+      "duration" : 338
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "delete_all_lesson::fin",
+    "time" : {
+      "start" : 1605193729988,
+      "stop" : 1605193729988,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1605193729985,
+      "stop" : 1605193729986,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "列出课程"
+  }, {
+    "name" : "feature",
+    "value" : "课程模块"
+  }, {
+    "name" : "tag",
+    "value" : "Lesson(order=2)"
+  }, {
+    "name" : "tag",
+    "value" : "lesson_list"
+  }, {
+    "name" : "suite",
+    "value" : "test_Lesson"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLesson"
+  }, {
+    "name" : "host",
+    "value" : "2Q7E3JCM2F8I91T"
+  }, {
+    "name" : "thread",
+    "value" : "11860-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_Lesson"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "inData",
+    "value" : "'{\"action\":\"list_course\",\"pagenum\":\"-1\",\"pagesize\":\"20\"}'"
+  }, {
+    "name" : "repsData",
+    "value" : "'{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\lib\\common.py\", line 69, in dispatch\n    return handler(request, *args, **kwargs)\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\apps\\mgr\\handlers\\mgr.py\", line 84, in handle_list_course\n    return JsonResponse(Course.list(pagenum,pagesize))\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\http\\response.py\", line 503, in __init__\n    'In order to allow non-dict objects to be serialized set the '\nTypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.\n\"}'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "63d99619889f53cb",
+      "status" : "broken",
+      "statusDetails" : "json.decoder.JSONDecodeError: Invalid control character at: line 1 column 63 (char 62)",
+      "time" : {
+        "start" : 1605192774564,
+        "stop" : 1605192774567,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "53d36030dee6f68f",
+      "status" : "broken",
+      "statusDetails" : "json.decoder.JSONDecodeError: Invalid control character at: line 1 column 63 (char 62)",
+      "time" : {
+        "start" : 1605192049713,
+        "stop" : 1605192049717,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "8507c717023009f2",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /api/mgr/loginReq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x043308B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))",
+      "time" : {
+        "start" : 1605192027457,
+        "stop" : 1605192027457,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "40dcf61faee8586d",
+      "status" : "broken",
+      "statusDetails" : "json.decoder.JSONDecodeError: Invalid control character at: line 1 column 63 (char 62)",
+      "time" : {
+        "start" : 1605191856069,
+        "stop" : 1605191856072,
+        "duration" : 3
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "lesson_list", "Lesson(order=2)" ]
+  },
+  "source" : "b202cac8cdc39900.json",
+  "parameterValues" : [ "'{\"action\":\"list_course\",\"pagenum\":\"-1\",\"pagesize\":\"20\"}'", "'{\"retcode\": 500, \"reason\": \"Traceback (most recent call last):\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\lib\\common.py\", line 69, in dispatch\n    return handler(request, *args, **kwargs)\n  File \"G:\\SQ资料区\\松勤自动化课程\\Web-API课程\\安装文件\\restapi-teach\\backend\\apps\\mgr\\handlers\\mgr.py\", line 84, in handle_list_course\n    return JsonResponse(Course.list(pagenum,pagesize))\n  File \"E:\\Python3.6.4-Tool\\lib\\site-packages\\django\\http\\response.py\", line 503, in __init__\n    'In order to allow non-dict objects to be serialized set the '\nTypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.\n\"}'" ]
+}

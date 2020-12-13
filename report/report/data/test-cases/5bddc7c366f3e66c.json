@@ -1,0 +1,131 @@
+{
+  "uid" : "5bddc7c366f3e66c",
+  "name" : "test_add_lesson[{\"name\":\"大学 英语\",\"desc\":\"大学英语课程\",\"display_idx\":\"4\"}\n-{\"retcode\": 0, \"id\": 1304}]",
+  "fullName" : "test_Lesson.TestLesson#test_add_lesson",
+  "historyId" : "ce824db608c38436343c6e0e2bdbad28",
+  "time" : {
+    "start" : 1605191855919,
+    "stop" : 1605191855924,
+    "duration" : 5
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 2 == 0",
+  "statusTrace" : "self = <testCaseTeach.test_Lesson.TestLesson object at 0x04866670>\ninData = '{\"name\":\"大学 英语\",\"desc\":\"大学英语课程\",\"display_idx\":\"4\"}\\n', repsData = '{\"retcode\": 0, \"id\": 1304}'\n\n    @pytest.mark.lesson_add\n    # 标签--- 正常运行全部跑，只运行一个pytest test_Lesson.py -s -m=add  多个用逗号隔开\n    @pytest.mark.parametrize('inData,repsData', get_excelData('2-课程模块', 2, 26, 6, 8))\n    def test_add_lesson(self,inData,repsData):\n        res = LessonClass().addcourse(self.session,inData)\n>       assert json.loads(res)[\"retcode\"] == json.loads(repsData)[\"retcode\"]\nE       assert 2 == 0\n\ntest_Lesson.py:25: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1605191854604,
+      "stop" : 1605191854976,
+      "duration" : 372
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "delete_all_lesson",
+    "time" : {
+      "start" : 1605191853384,
+      "stop" : 1605191854604,
+      "duration" : 1220
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1605191856510,
+      "stop" : 1605191856510,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "delete_all_lesson::fin",
+    "time" : {
+      "start" : 1605191856512,
+      "stop" : 1605191856512,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "课程模块"
+  }, {
+    "name" : "tag",
+    "value" : "Lesson(order=2)"
+  }, {
+    "name" : "tag",
+    "value" : "lesson_add"
+  }, {
+    "name" : "suite",
+    "value" : "test_Lesson"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLesson"
+  }, {
+    "name" : "host",
+    "value" : "2Q7E3JCM2F8I91T"
+  }, {
+    "name" : "thread",
+    "value" : "272-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_Lesson"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "inData",
+    "value" : "'{\"name\":\"大学 英语\",\"desc\":\"大学英语课程\",\"display_idx\":\"4\"}\n'"
+  }, {
+    "name" : "repsData",
+    "value" : "'{\"retcode\": 0, \"id\": 1304}'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "lesson_add", "Lesson(order=2)" ]
+  },
+  "source" : "5bddc7c366f3e66c.json",
+  "parameterValues" : [ "'{\"name\":\"大学 英语\",\"desc\":\"大学英语课程\",\"display_idx\":\"4\"}\n'", "'{\"retcode\": 0, \"id\": 1304}'" ]
+}

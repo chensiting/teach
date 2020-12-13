@@ -1,0 +1,122 @@
+{
+  "uid" : "aaabab72d9a0b171",
+  "name" : "登录接口用例",
+  "fullName" : "test_Login#test_Login",
+  "historyId" : "6a230ec124879b0be65b299153d7a240",
+  "time" : {
+    "start" : 1605167445882,
+    "stop" : 1605167445965,
+    "duration" : 83
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "delete_all_lesson",
+    "time" : {
+      "start" : 1605167444988,
+      "stop" : 1605167445588,
+      "duration" : 600
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "delete_all_lesson::fin",
+    "time" : {
+      "start" : 1605167445976,
+      "stop" : 1605167445977,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "登录接口"
+  }, {
+    "name" : "feature",
+    "value" : "登录模块"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "tag",
+    "value" : "login(order=1)"
+  }, {
+    "name" : "suite",
+    "value" : "test_Login"
+  }, {
+    "name" : "host",
+    "value" : "BLD-04728"
+  }, {
+    "name" : "thread",
+    "value" : "30548-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_Login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "inData",
+    "value" : "'{\"username\": \"\",\"password\": \"\"}'"
+  }, {
+    "name" : "repsData",
+    "value" : "'{\n\"retcode\": 1,\n\"reason\": \"用户或者密码错误\"\n}'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "d6174fa56b6c3efd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605167283856,
+        "stop" : 1605167283954,
+        "duration" : 98
+      }
+    }, {
+      "uid" : "382bb34274f4a6f4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605163334730,
+        "stop" : 1605163334807,
+        "duration" : 77
+      }
+    }, {
+      "uid" : "ae1242d8434da3bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605153134090,
+        "stop" : 1605153134169,
+        "duration" : 79
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "login(order=1)" ]
+  },
+  "source" : "aaabab72d9a0b171.json",
+  "parameterValues" : [ "'{\"username\": \"\",\"password\": \"\"}'", "'{\n\"retcode\": 1,\n\"reason\": \"用户或者密码错误\"\n}'" ]
+}

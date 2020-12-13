@@ -1,0 +1,136 @@
+{
+  "uid" : "a3065a40dab0e9ac",
+  "name" : "列出课程用例",
+  "fullName" : "test_Lesson.TestLesson#test_list_lesson[{\"action\":\"list_course\",\"pagenum\":\"1\",\"pagesize\":\"1001\"}-{\"retcode\": 0, \"retlist\": ",
+  "historyId" : "3f7a7d9a0b5ce82fdeb9fe2e16ed01b8",
+  "time" : {
+    "start" : 1605192049849,
+    "stop" : 1605192049853,
+    "duration" : 4
+  },
+  "description" : "列出课程",
+  "descriptionHtml" : "<p>列出课程</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 2 == 0",
+  "statusTrace" : "self = <testCaseTeach.test_Lesson.TestLesson object at 0x03D55270>\ninData = '{\"action\":\"list_course\",\"pagenum\":\"1\",\"pagesize\":\"1001\"}'\nrepsData = '{\"retcode\": 0, \"retlist\": [{\"id\": 1287, \"name\": \"大学英语\", \"desc\": \"大学英语课程\", \"display_idx\": 4}], \"total\": 1}'\n\n    @allure.story(\"列出课程\")\n    @allure.title(\"列出课程用例\")\n    @pytest.mark.lesson_list\n    @pytest.mark.parametrize('inData,repsData', get_excelData('2-课程模块', 27, 38, 6, 8))\n    def test_list_lesson(self,inData,repsData):\n        \"\"\"列出课程\"\"\"\n        res = LessonClass().listcourse(self.session,json.loads(inData))\n>       assert  json.loads(res)['retcode'] == json.loads(repsData)['retcode']#断言\nE       assert 2 == 0\n\ntest_Lesson.py:37: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1605192041236,
+      "stop" : 1605192041576,
+      "duration" : 340
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "delete_all_lesson",
+    "time" : {
+      "start" : 1605192040427,
+      "stop" : 1605192041236,
+      "duration" : 809
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1605192050141,
+      "stop" : 1605192050141,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "delete_all_lesson::fin",
+    "time" : {
+      "start" : 1605192050143,
+      "stop" : 1605192050143,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "列出课程"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "课程模块"
+  }, {
+    "name" : "tag",
+    "value" : "Lesson(order=2)"
+  }, {
+    "name" : "tag",
+    "value" : "lesson_list"
+  }, {
+    "name" : "suite",
+    "value" : "test_Lesson"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLesson"
+  }, {
+    "name" : "host",
+    "value" : "2Q7E3JCM2F8I91T"
+  }, {
+    "name" : "thread",
+    "value" : "6388-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_Lesson"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "inData",
+    "value" : "'{\"action\":\"list_course\",\"pagenum\":\"1\",\"pagesize\":\"1001\"}'"
+  }, {
+    "name" : "repsData",
+    "value" : "'{\"retcode\": 0, \"retlist\": [{\"id\": 1287, \"name\": \"大学英语\", \"desc\": \"大学英语课程\", \"display_idx\": 4}], \"total\": 1}'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "lesson_list", "Lesson(order=2)" ]
+  },
+  "source" : "a3065a40dab0e9ac.json",
+  "parameterValues" : [ "'{\"action\":\"list_course\",\"pagenum\":\"1\",\"pagesize\":\"1001\"}'", "'{\"retcode\": 0, \"retlist\": [{\"id\": 1287, \"name\": \"大学英语\", \"desc\": \"大学英语课程\", \"display_idx\": 4}], \"total\": 1}'" ]
+}

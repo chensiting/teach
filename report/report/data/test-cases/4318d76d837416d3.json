@@ -1,0 +1,148 @@
+{
+  "uid" : "4318d76d837416d3",
+  "name" : "登录接口用例",
+  "fullName" : "test_Login#test_Login",
+  "historyId" : "4127515a21589c94e65ebfbaee14e528",
+  "time" : {
+    "start" : 1605360727404,
+    "stop" : 1605360727497,
+    "duration" : 93
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "delete_all_lesson",
+    "time" : {
+      "start" : 1605360725534,
+      "stop" : 1605360726923,
+      "duration" : 1389
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "delete_all_lesson::fin",
+    "time" : {
+      "start" : 1605360727615,
+      "stop" : 1605360727615,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "登录模块"
+  }, {
+    "name" : "story",
+    "value" : "登录接口"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "tag",
+    "value" : "login(order=1)"
+  }, {
+    "name" : "suite",
+    "value" : "test_Login"
+  }, {
+    "name" : "host",
+    "value" : "2Q7E3JCM2F8I91T"
+  }, {
+    "name" : "thread",
+    "value" : "5724-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_Login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "inData",
+    "value" : "'{\"username\": \"auto\",\"password\": \"\"}'"
+  }, {
+    "name" : "repsData",
+    "value" : "'{\n\"retcode\": 1,\n\"reason\": \"用户或者密码错误\"\n}'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "139deee13f6b9a22",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /api/mgr/loginReq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0444FDD0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))",
+      "time" : {
+        "start" : 1605360701493,
+        "stop" : 1605360701493,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2d8bb05392ca2820",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605193731857,
+        "stop" : 1605193731953,
+        "duration" : 96
+      }
+    }, {
+      "uid" : "c059948de0ef9bba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605192776662,
+        "stop" : 1605192776756,
+        "duration" : 94
+      }
+    }, {
+      "uid" : "c6e97b83e0a34830",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605192052321,
+        "stop" : 1605192052413,
+        "duration" : 92
+      }
+    }, {
+      "uid" : "f14b291e88676ee0",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /api/mgr/loginReq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x04CEECD0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))",
+      "time" : {
+        "start" : 1605192033113,
+        "stop" : 1605192033113,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "bee12124831145a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605191858185,
+        "stop" : 1605191858306,
+        "duration" : 121
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "login(order=1)" ]
+  },
+  "source" : "4318d76d837416d3.json",
+  "parameterValues" : [ "'{\"username\": \"auto\",\"password\": \"\"}'", "'{\n\"retcode\": 1,\n\"reason\": \"用户或者密码错误\"\n}'" ]
+}

@@ -1,0 +1,186 @@
+{
+  "uid" : "c36da6f299eae6d5",
+  "name" : "列出课程用例",
+  "fullName" : "test_Lesson.TestLesson#test_list_lesson[{\"action\":\"list_course\",\"pagenum\":\"1\",\"pagesize\":\"500\"}-{\"retcode\": 0, \"retlist\": ",
+  "historyId" : "f40f1cf2b2d50ab579179a1d7f32dc67",
+  "time" : {
+    "start" : 1605360725192,
+    "stop" : 1605360725198,
+    "duration" : 6
+  },
+  "description" : "列出课程",
+  "descriptionHtml" : "<p>列出课程</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "delete_all_lesson",
+    "time" : {
+      "start" : 1605360722243,
+      "stop" : 1605360723450,
+      "duration" : 1207
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1605360723450,
+      "stop" : 1605360723751,
+      "duration" : 301
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "delete_all_lesson::fin",
+    "time" : {
+      "start" : 1605360725530,
+      "stop" : 1605360725530,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1605360725528,
+      "stop" : 1605360725528,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "课程模块"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "列出课程"
+  }, {
+    "name" : "tag",
+    "value" : "Lesson(order=2)"
+  }, {
+    "name" : "tag",
+    "value" : "lesson_list"
+  }, {
+    "name" : "suite",
+    "value" : "test_Lesson"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLesson"
+  }, {
+    "name" : "host",
+    "value" : "2Q7E3JCM2F8I91T"
+  }, {
+    "name" : "thread",
+    "value" : "5724-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_Lesson"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "inData",
+    "value" : "'{\"action\":\"list_course\",\"pagenum\":\"1\",\"pagesize\":\"500\"}'"
+  }, {
+    "name" : "repsData",
+    "value" : "'{\"retcode\": 0, \"retlist\": [{\"id\": 1287, \"name\": \"大学英语\", \"desc\": \"大学英语课程\", \"display_idx\": 4}], \"total\": 1}'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "10b1526b3132213d",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /api/mgr/loginReq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x03A8A890>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))",
+      "time" : {
+        "start" : 1605360696638,
+        "stop" : 1605360696638,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d4f7bcfd7b4e7c92",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605193729643,
+        "stop" : 1605193729649,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "65c85324fd21d899",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605192774688,
+        "stop" : 1605192774694,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "575f4b568e9295d0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605192049829,
+        "stop" : 1605192049835,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "3dddfc7beb089790",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /api/mgr/loginReq (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x043308B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))",
+      "time" : {
+        "start" : 1605192028317,
+        "stop" : 1605192028317,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "641ae646b1c0aaa2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1605191856184,
+        "stop" : 1605191856190,
+        "duration" : 6
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "lesson_list", "Lesson(order=2)" ]
+  },
+  "source" : "c36da6f299eae6d5.json",
+  "parameterValues" : [ "'{\"action\":\"list_course\",\"pagenum\":\"1\",\"pagesize\":\"500\"}'", "'{\"retcode\": 0, \"retlist\": [{\"id\": 1287, \"name\": \"大学英语\", \"desc\": \"大学英语课程\", \"display_idx\": 4}], \"total\": 1}'" ]
+}
